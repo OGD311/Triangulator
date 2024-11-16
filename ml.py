@@ -7,8 +7,8 @@ from pythonping import ping
 import time
 import joblib
 
-TRAIN_SET_LIMIT = 1000
-TRAIN_SET_COUNT = 8
+TRAIN_SET_LIMIT = 1
+TRAIN_SET_COUNT = 5
 
 with open('/Users/oliver/Desktop/Github/Triangulator/final_data.json', 'r') as f:
     data = json.load(f)
@@ -18,11 +18,11 @@ with open('/Users/oliver/Desktop/Github/Triangulator/final_data.json', 'r') as f
 
 TRAIN_INPUT = time_data
 TRAIN_OUTPUT = distance_data
-degree = 2
+degree = 3
 model = make_pipeline(PolynomialFeatures(degree), LinearRegression())
 model.fit(TRAIN_INPUT[:TRAIN_SET_COUNT], TRAIN_OUTPUT[:TRAIN_SET_COUNT])
 
-X_TEST = [[0.038]]
+X_TEST = [[0.034]]
 
 outcome = model.predict(X_TEST)
 coefficients = model.named_steps['linearregression'].coef_

@@ -25,6 +25,6 @@ def check_ips(input_file, output_file):
         json.dump(results, outfile, indent=4)
 
 if __name__ == "__main__":
-    input_file = 'input_ips.json'  # Replace with your input file path
+    input_file = '/Users/oliver/Desktop/Github/Triangulator/input_ips.json'  # Replace with your input file path
     output_file = 'output_ips.json'  # Replace with your output file path
     check_ips(input_file, output_file)
