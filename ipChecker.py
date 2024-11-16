@@ -1,14 +1,21 @@
 import json
 import requests
+import time
 
 def check_ips(input_file, output_file):
     with open(input_file, 'r') as infile:
         ips = json.load(infile)
     
     results = []
+    count = 0
     for ip in ips:
+        if count == 45:
+            time.sleep(60)
+            count = 0
         response = requests.get(f'http://ip-api.com/json/{ip}')
+        count += 1
         data = response.json()
+        print(data)
         if data['status'] == 'success':
             results.append({'ip': ip, 'city': data['city'], 'coordinates': (data['lat'], data['lon']), 'country': data['country']})
         else:
