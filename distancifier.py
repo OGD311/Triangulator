@@ -5,6 +5,7 @@ from pythonping import ping
 import haversine as h
 import json
 import random
+import webbrowser
 
 model = joblib.load('/Users/oliver/Desktop/Github/Triangulator/disTime.joblib')
 print("running")
@@ -15,39 +16,39 @@ def ping_host(address):
 
 hosts = [
     {
-        "ip": "81.152.55.0",
-        "city": "Plymouth",
-        "coordinates": [
-            50.3881,
-            -4.1324
-        ],
-        "country": "United Kingdom",
-        "avgTime": 0.03428540229797363,
-        "distance": 379.3316848460527
-    },
-    {
-        "ip": "149.255.102.0",
-        "city": "Newcastle",
-        "coordinates": [
-            54.2218,
-            -5.9362
-        ],
-        "country": "United Kingdom",
-        "avgTime": 0.02414116859436035,
-        "distance": 307.2153745690649
-    },
-    {
-        "ip": "5.10.22.0",
-        "city": "London",
-        "coordinates": [
-            51.5074,
-            -0.127758
-        ],
-        "country": "United Kingdom",
-        "avgTime": 0.010084199905395507,
-        "distance": 227.58326183352858
-    },
-    
+            "ip": "2.222.126.0",
+            "city": "Dover",
+            "coordinates": [
+                51.1734,
+                1.2785
+            ],
+            "country": "United Kingdom",
+            "avgTime": 0.016706514358520507,
+            "distance": 308.91593866104284
+        },
+        {
+            "ip": "90.221.131.0",
+            "city": "Brixton",
+            "coordinates": [
+                50.35,
+                -4.03333
+            ],
+            "country": "United Kingdom",
+            "avgTime": 0.022867441177368164,
+            "distance": 379.90614367936075
+        },
+        {
+            "ip": "51.148.134.0",
+            "city": "London",
+            "coordinates": [
+                51.5072,
+                -0.127586
+            ],
+            "country": "United Kingdom",
+            "avgTime": 0.014091968536376953,
+            "distance": 227.60839161410848
+        },
+
 ]
 
 
@@ -78,79 +79,24 @@ for i in range(len(pingResults)):
 for i in range(len(modelResults)):
     print(f"{modelResults[i]['coordinates']} : {modelResults[i]['distance']}")
 
-import numpy as np
-from scipy.optimize import minimize
-import webbrowser
-
-def latlon_to_cartesian(lat, lon, radius=6371):
-    lat, lon = np.radians(lat), np.radians(lon)
-    x = radius * np.cos(lat) * np.cos(lon)
-    y = radius * np.cos(lat) * np.sin(lon)
-    z = radius * np.sin(lat)
-    return np.array([x, y, z])
-
-def cartesian_to_latlon(x, y, z, radius=6371):
-    lat = np.degrees(np.arcsin(z / radius))
-    lon = np.degrees(np.arctan2(y, x))
-    return float(lat), float(lon)
-
-def distance_to_circle(center, circle_center, radius):
-    """
-    Calculate the squared distance from a point to the edge of a circle.
-    """
-    return (np.linalg.norm(center - circle_center) - radius)**2
-
-def objective_function(cartesian_point, p1, r1, p2, r2, p3, r3):
-    """
-    Objective function to minimize: sum of squared distances to the circle edges.
-    """
-    return (
-        distance_to_circle(cartesian_point, p1, r1) +
-        distance_to_circle(cartesian_point, p2, r2) +
-        distance_to_circle(cartesian_point, p3, r3)
-    )
-
-def find_overlap_center(c1, r1, c2, r2, c3, r3):
-    """
-    Find the approximate center of the overlapping area of three circles in latitude/longitude.
     
-    c1, c2, c3: Tuples of (latitude, longitude) for the circle centers
-    r1, r2, r3: Radii of the circles in kilometers
-    Returns: Tuple of (latitude, longitude) for the center of overlap
-    """
-    # Convert circle centers to Cartesian coordinates
-    p1 = latlon_to_cartesian(*c1)
-    p2 = latlon_to_cartesian(*c2)
-    p3 = latlon_to_cartesian(*c3)
+# https://www.mapdevelopers.com/draw-circle-tool.php?circles=[[371098,50.3879546,-4.1318378,"#AAAAAA","#000000",0.4],[222928,54.9741773,-1.6150185,"#AAAAAA","#000000",0.4],[222305,51.5085078,-0.0843403,"#AAAAAA","#000000",0.4]]
+# https://www.mapdevelopers.com/draw-circle-tool.php?circles=[[393.11247610677924,50.3881,-4.1324,"#AAAAAA","#000000",0.4],[311.8821298708854,56.4806,-2.9358,"#AAAAAA","#000000",0.4],[230.11380145610286,51.5074,-0.127758,"#AAAAAA","#000000",0.4]]
 
-    # Initial guess for the center (centroid of the circle centers)
-    initial_guess = (p1 + p2 + p3) / 3
+import urllib.parse
 
-    # Minimize the objective function
-    result = minimize(
-        objective_function,
-        initial_guess,
-        args=(p1, r1, p2, r2, p3, r3),
-        method='L-BFGS-B'
-    )
+url = "https://www.mapdevelopers.com/draw-circle-tool.php?circles=["
+circles = []
 
-    # Convert the result back to latitude and longitude
-    center_cartesian = result.x
-    center_latlon = cartesian_to_latlon(*center_cartesian)
-    return center_latlon
+for result in modelResults:
+    lat, lon = result['coordinates']
+    distance = round(result['distance'] * 1000, 1)
+    circle = f"[{distance},{lat},{lon},\"#AAAAAA\",\"#000000\",0.4]"
+    circles.append(circle)
 
+url += ",".join(circles)
+url += "]"
 
-circle1 = modelResults[0]['coordinates']
-radius1 = modelResults[0]['distance']
-
-circle2 = modelResults[1]['coordinates']
-radius2 = modelResults[1]['distance']
-
-circle3 = modelResults[2]['coordinates']
-radius3 = modelResults[2]['distance']
-
-center_point = find_overlap_center(circle1, radius1, circle2, radius2, circle3, radius3)
-print("Approximate center of overlap:", center_point)
-url = 'https://www.google.co.uk/maps/place/' + str(center_point[0]) + ',' + str(center_point[1])
-print(url)
-webbrowser.open(url)
+encoded_url = urllib.parse.quote(url, safe=':/?=&')
+print(encoded_url)
+webbrowser.open(encoded_url)

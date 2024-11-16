@@ -17,6 +17,7 @@ for host in hosts:
     address = host.get('ip')
     avgTime = []
     if address:
+        print(f"Pinging {address}")
         for _ in range(5):  # Ping 5 times to get an average
             start = time.time()
             ping_host(address)

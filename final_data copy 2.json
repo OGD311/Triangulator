@@ -1,0 +1,299 @@
+[
+    {
+        "ip": "81.152.55.0",
+        "city": "Plymouth",
+        "coordinates": [
+            50.3881,
+            -4.1324
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.03428540229797363,
+        "distance": 379.3316848460527
+    },
+    {
+        "ip": "90.221.131.0",
+        "city": "Brixton",
+        "coordinates": [
+            50.35,
+            -4.03333
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.022867441177368164,
+        "distance": 379.90614367936075
+    },
+    {
+        "ip": "149.14.224.202",
+        "city": "London",
+        "coordinates": [
+            51.508,
+            -0.0844
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.008893775939941406,
+        "distance": 228.71973359483474
+    },
+    {
+        "ip": "195.50.124.146",
+        "city": "London",
+        "coordinates": [
+            51.5287,
+            -0.100963
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.008030557632446289,
+        "distance": 226.15116619006216
+    },
+    {
+        "ip": "51.146.69.0",
+        "city": "Dundee",
+        "coordinates": [
+            56.4806,
+            -2.9358
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.024982595443725587,
+        "distance": 356.9629430577311
+    },
+    {
+        "ip": "51.148.134.0",
+        "city": "London",
+        "coordinates": [
+            51.5072,
+            -0.127586
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.014091968536376953,
+        "distance": 227.60839161410848
+    },
+    {
+        "ip": "51.146.46.0",
+        "city": "Reading",
+        "coordinates": [
+            51.4032,
+            -0.9207
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.025163888931274414,
+        "distance": 223.1812802145309
+    },
+    {
+        "ip": "51.194.79.0",
+        "city": "Bridgend",
+        "coordinates": [
+            51.5396,
+            -3.5938
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.016228723526000976,
+        "distance": 249.91227638275703
+    },
+    {
+        "ip": "2.222.126.0",
+        "city": "Dover",
+        "coordinates": [
+            51.1734,
+            1.2785
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.016706514358520507,
+        "distance": 308.91593866104284
+    },
+    {
+        "ip": "5.10.22.0",
+        "city": "London",
+        "coordinates": [
+            51.5074,
+            -0.127758
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.010084199905395507,
+        "distance": 227.58326183352858
+    },
+    {
+        "ip": "80.6.67.0",
+        "city": "Burnley",
+        "coordinates": [
+            53.7967,
+            -2.2353
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.03070516586303711,
+        "distance": 68.02409188676552
+    },
+    {
+        "ip": "51.89.128.110",
+        "city": "Newcastle upon Tyne",
+        "coordinates": [
+            54.9742,
+            -1.615
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.010955476760864257,
+        "distance": 177.3519567962753
+    },
+    {
+        "ip": "5.151.85.0",
+        "city": "London",
+        "coordinates": [
+            51.5072,
+            -0.127586
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.023093414306640626,
+        "distance": 227.60839161410848
+    },
+    {
+        "ip": "5.151.86.0",
+        "city": "Clevedon",
+        "coordinates": [
+            51.423,
+            -2.85082
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.020577383041381837,
+        "distance": 236.79410295447965
+    },
+    {
+        "ip": "82.33.100.0",
+        "city": "North Shields",
+        "coordinates": [
+            55.0168,
+            -1.451
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.030068254470825194,
+        "distance": 181.87630720131983
+    },
+    {
+        "ip": "5.65.198.0",
+        "city": "Swindon",
+        "coordinates": [
+            51.5577,
+            -1.7767
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.03476924896240234,
+        "distance": 203.76816315090582
+    },
+    {
+        "ip": "154.14.205.200",
+        "city": "Newcastle upon Tyne",
+        "coordinates": [
+            54.9783,
+            -1.61778
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.011250782012939452,
+        "distance": 177.8163714390396
+    },
+    {
+        "ip": "149.255.102.0",
+        "city": "Newcastle",
+        "coordinates": [
+            54.2218,
+            -5.9362
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.02414116859436035,
+        "distance": 307.2153745690649
+    },
+    {
+        "ip": "2.98.175.0",
+        "city": "Cleveleys",
+        "coordinates": [
+            53.8743,
+            -3.0233
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.05628724098205566,
+        "distance": 115.66332898536113
+    },
+    {
+        "ip": "51.241.94.0",
+        "city": "Carlisle",
+        "coordinates": [
+            54.8706,
+            -2.946
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.02561955451965332,
+        "distance": 191.2150775893366
+    },
+    {
+        "ip": "86.133.224.0",
+        "city": "Hoddesdon",
+        "coordinates": [
+            51.7627,
+            -0.0032
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.01665840148925781,
+        "distance": 205.74244899951992
+    },
+    {
+        "ip": "80.5.118.0",
+        "city": "Morden",
+        "coordinates": [
+            51.3926,
+            -0.1977
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.02296304702758789,
+        "distance": 237.59325548648818
+    },
+    {
+        "ip": "81.97.139.0",
+        "city": "Brighton",
+        "coordinates": [
+            50.8345,
+            -0.186
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.04055566787719726,
+        "distance": 296.6141657645454
+    },
+    {
+        "ip": "81.99.84.0",
+        "city": "Shildon",
+        "coordinates": [
+            54.6288,
+            -1.6194
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.028684186935424804,
+        "distance": 139.0275656008913
+    },
+    {
+        "ip": "81.103.254.0",
+        "city": "Rochdale",
+        "coordinates": [
+            53.5815,
+            -2.1778
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.02611517906188965,
+        "distance": 51.33447686775575
+    },
+    {
+        "ip": "82.16.169.0",
+        "city": "Middlesbrough",
+        "coordinates": [
+            54.5585,
+            -1.1476
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.04757590293884277,
+        "distance": 132.6865309136353
+    },
+    {
+        "ip": "90.214.41.0",
+        "city": "Middlesbrough",
+        "coordinates": [
+            54.5324,
+            -1.2053
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.026179170608520506,
+        "distance": 129.24891722071578
+    }
+]

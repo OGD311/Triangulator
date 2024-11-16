@@ -15,9 +15,10 @@ def ping_host(address):
 results = []
 for host in hosts:
    avgTime = host.get('avgTime')
+   results.append(host)
 
-   if avgTime < 2:
-        results.append(host)
+    #   if avgTime < 2:
+    
    
    
    
