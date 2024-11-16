@@ -1,0 +1,183 @@
+[
+    {
+      "address": "at-ed.metercdn.net",
+      "coordinates": [48.22989, 16.403893]
+    },
+    {
+      "address": "at-gr.metercdn.net",
+      "coordinates": [47.0619678, 15.4358933]
+    },
+    {
+      "address": "au-ed.metercdn.net",
+      "coordinates": [-33.85323593, 151.23351111]
+    },
+    {
+      "address": "be-ed.metercdn.net",
+      "coordinates": [50.8847751, 4.36805697]
+    },
+    {
+      "address": "bgco-ed.metercdn.net",
+      "coordinates": [4.705250918509, 73.992222620619]
+    },
+    {
+      "address": "ca-ed.metercdn.net",
+      "coordinates": [45.4356448, -73.5563298]
+    },
+    {
+      "address": "ch-ed2.metercdn.net",
+      "coordinates": [47.363615, 8.541611]
+    },
+    {
+      "address": "ch-ed3.metercdn.net",
+      "coordinates": [47.363615, 8.541611]
+    },
+    {
+      "address": "ch-ed4.metercdn.net",
+      "coordinates": [47.363615, 8.541611]
+    },
+    {
+      "address": "cl-ed.metercdn.net",
+      "coordinates": [-33.0116959, -71.5570244]
+    },
+    {
+      "address": "cr-ed.metercdn.net",
+      "coordinates": [45.7824, 15.9147]
+    },
+    {
+      "address": "cz-ed.metercdn.net",
+      "coordinates": [50.062184, 14.53683]
+    },
+    {
+      "address": "de-ed.metercdn.net",
+      "coordinates": [50.10284985235591, 8.67013407455254]
+    },
+    {
+      "address": "dk-ed.metercdn.net",
+      "coordinates": [55.6928171, 12.6035429]
+    },
+    {
+      "address": "es-ed.metercdn.net",
+      "coordinates": [37.3761458, -5.9932592]
+    },
+    {
+      "address": "fr-ed.metercdn.net",
+      "coordinates": [48.857822, 2.380254]
+    },
+    {
+      "address": "gb-ed.metercdn.net",
+      "coordinates": [51.49785, -0.122471]
+    },
+    {
+      "address": "gbdock-ed.metercdn.net",
+      "coordinates": [51.49379, -0.01761418]
+    },
+    {
+      "address": "gr-gr.metercdn.net",
+      "coordinates": [40.614542, 22.917702]
+    },
+    {
+      "address": "hk-ed.metercdn.net",
+      "coordinates": [22.357169, 114.130072]
+    },
+    {
+      "address": "hu-ed.metercdn.net",
+      "coordinates": [47.497416, 19.045013]
+    },
+    {
+      "address": "hu-ed3.metercdn.net",
+      "coordinates": [47.497416, 19.045013]
+    },
+    {
+      "address": "il-ta.metercdn.net",
+      "coordinates": [32.0905383, 34.7590558]
+    },
+    {
+      "address": "is-ed.metercdn.net",
+      "coordinates": [64.072014, -21.978324]
+    },
+    {
+      "address": "it-ed.metercdn.net",
+      "coordinates": [42.123354, 12.230298]
+    },
+    {
+      "address": "itpl-ed.metercdn.net",
+      "coordinates": [38.128556, 13.379795]
+    },
+    {
+      "address": "jp-ed.metercdn.net",
+      "coordinates": [35.6147663, 139.8223566]
+    },
+    {
+      "address": "lt-ed.metercdn.net",
+      "coordinates": [54.6934282, 25.2714433]
+    },
+    {
+      "address": "lv-ed.metercdn.net",
+      "coordinates": [57.012214, 24.091306]
+    },
+    {
+      "address": "md-ed.metercdn.net",
+      "coordinates": [47.0350822, 28.8476715]
+    },
+    {
+      "address": "nl-ed.metercdn.net",
+      "coordinates": [52.395663, 4.8926897]
+    },
+    {
+      "address": "nm-ed.metercdn.net",
+      "coordinates": [42.01263, 21.4188]
+    },
+    {
+      "address": "nw-ed.metercdn.net",
+      "coordinates": [59.8781, 10.6898]
+    },
+    {
+      "address": "pl-ed2.metercdn.net",
+      "coordinates": [52.257133, 21.013682]
+    },
+    {
+      "address": "pl-ed3.metercdn.net",
+      "coordinates": [52.257133, 21.013682]
+    },
+    {
+      "address": "ro-ro.metercdn.net",
+      "coordinates": [44.4556325, 26.0270972]
+    },
+    {
+      "address": "rs-ed.metercdn.net",
+      "coordinates": [44.82529, 20.443104]
+    },
+    {
+      "address": "ru-ed2.metercdn.net",
+      "coordinates": [55.738094, 37.606496]
+    },
+    {
+      "address": "rusp-ed.metercdn.net",
+      "coordinates": [59.965608, 29.9744482]
+    },
+    {
+      "address": "sg-ed.metercdn.net",
+      "coordinates": [1.3679312, 103.8030263]
+    },
+    {
+      "address": "si-ed.metercdn.net",
+      "coordinates": [46.057676, 14.505999]
+    },
+    {
+      "address": "sw-ed.metercdn.net",
+      "coordinates": [59.3223, 18.0838]
+    },
+    {
+      "address": "uae-ed.metercdn.net",
+      "coordinates": [25.1962, 55.0698]
+    },
+    {
+      "address": "us-ed.metercdn.net",
+      "coordinates": [40.66433, -74.04878]
+    },
+    {
+      "address": "usmi-ed.metercdn.net",
+      "coordinates": [25.78, -80.19]
+    }
+  ]
+  

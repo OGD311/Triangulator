@@ -1,0 +1,182 @@
+[
+    {
+        "url": "at-ed.metercdn.net",
+        "avgTime": 6.008148193359375e-06
+    },
+    {
+        "url": "at-gr.metercdn.net",
+        "avgTime": 2.5272369384765624e-06
+    },
+    {
+        "url": "au-ed.metercdn.net",
+        "avgTime": 5.9604644775390625e-06
+    },
+    {
+        "url": "be-ed.metercdn.net",
+        "avgTime": 1.7642974853515626e-06
+    },
+    {
+        "url": "bgco-ed.metercdn.net",
+        "avgTime": 1.1587142944335938e-05
+    },
+    {
+        "url": "ca-ed.metercdn.net",
+        "avgTime": 2.193450927734375e-06
+    },
+    {
+        "url": "ch-ed2.metercdn.net",
+        "avgTime": 2.002716064453125e-06
+    },
+    {
+        "url": "ch-ed3.metercdn.net",
+        "avgTime": 3.7670135498046877e-06
+    },
+    {
+        "url": "ch-ed4.metercdn.net",
+        "avgTime": 1.5735626220703124e-06
+    },
+    {
+        "url": "cl-ed.metercdn.net",
+        "avgTime": 2.002716064453125e-06
+    },
+    {
+        "url": "cr-ed.metercdn.net",
+        "avgTime": 4.816055297851562e-06
+    },
+    {
+        "url": "cz-ed.metercdn.net",
+        "avgTime": 1.7642974853515626e-06
+    },
+    {
+        "url": "de-ed.metercdn.net",
+        "avgTime": 2.002716064453125e-06
+    },
+    {
+        "url": "dk-ed.metercdn.net",
+        "avgTime": 4.1961669921875e-06
+    },
+    {
+        "url": "es-ed.metercdn.net",
+        "avgTime": 1.9550323486328123e-06
+    },
+    {
+        "url": "fr-ed.metercdn.net",
+        "avgTime": 2.002716064453125e-06
+    },
+    {
+        "url": "gb-ed.metercdn.net",
+        "avgTime": 2.002716064453125e-06
+    },
+    {
+        "url": "gbdock-ed.metercdn.net",
+        "avgTime": 1.52587890625e-06
+    },
+    {
+        "url": "gr-gr.metercdn.net",
+        "avgTime": 2.956390380859375e-06
+    },
+    {
+        "url": "hk-ed.metercdn.net",
+        "avgTime": 2.0503997802734374e-06
+    },
+    {
+        "url": "hu-ed.metercdn.net",
+        "avgTime": 2.0503997802734374e-06
+    },
+    {
+        "url": "hu-ed3.metercdn.net",
+        "avgTime": 2.6226043701171875e-06
+    },
+    {
+        "url": "il-ta.metercdn.net",
+        "avgTime": 1.9550323486328123e-06
+    },
+    {
+        "url": "is-ed.metercdn.net",
+        "avgTime": 1.7642974853515626e-06
+    },
+    {
+        "url": "it-ed.metercdn.net",
+        "avgTime": 2.002716064453125e-06
+    },
+    {
+        "url": "itpl-ed.metercdn.net",
+        "avgTime": 1.5735626220703124e-06
+    },
+    {
+        "url": "jp-ed.metercdn.net",
+        "avgTime": 2.765655517578125e-06
+    },
+    {
+        "url": "lt-ed.metercdn.net",
+        "avgTime": 2.002716064453125e-06
+    },
+    {
+        "url": "lv-ed.metercdn.net",
+        "avgTime": 1.7642974853515626e-06
+    },
+    {
+        "url": "md-ed.metercdn.net",
+        "avgTime": 2.193450927734375e-06
+    },
+    {
+        "url": "nl-ed.metercdn.net",
+        "avgTime": 2.002716064453125e-06
+    },
+    {
+        "url": "nm-ed.metercdn.net",
+        "avgTime": 2.002716064453125e-06
+    },
+    {
+        "url": "nw-ed.metercdn.net",
+        "avgTime": 2.2411346435546876e-06
+    },
+    {
+        "url": "pl-ed2.metercdn.net",
+        "avgTime": 2.0503997802734374e-06
+    },
+    {
+        "url": "pl-ed3.metercdn.net",
+        "avgTime": 2.002716064453125e-06
+    },
+    {
+        "url": "ro-ro.metercdn.net",
+        "avgTime": 2.193450927734375e-06
+    },
+    {
+        "url": "rs-ed.metercdn.net",
+        "avgTime": 2.193450927734375e-06
+    },
+    {
+        "url": "ru-ed2.metercdn.net",
+        "avgTime": 1.8596649169921875e-06
+    },
+    {
+        "url": "rusp-ed.metercdn.net",
+        "avgTime": 2.193450927734375e-06
+    },
+    {
+        "url": "sg-ed.metercdn.net",
+        "avgTime": 3.0040740966796874e-06
+    },
+    {
+        "url": "si-ed.metercdn.net",
+        "avgTime": 3.3855438232421873e-06
+    },
+    {
+        "url": "sw-ed.metercdn.net",
+        "avgTime": 2.193450927734375e-06
+    },
+    {
+        "url": "uae-ed.metercdn.net",
+        "avgTime": 1.5735626220703124e-06
+    },
+    {
+        "url": "us-ed.metercdn.net",
+        "avgTime": 2.002716064453125e-06
+    },
+    {
+        "url": "usmi-ed.metercdn.net",
+        "avgTime": 2.8133392333984377e-06
+    }
+]
