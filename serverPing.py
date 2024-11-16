@@ -4,27 +4,27 @@ import time
 from pythonping import ping
 
 # Load JSON data from file
-with open('servers.json', 'r') as file:
+with open('/Users/oliver/Desktop/Github/Triangulator/servers.json', 'r') as file:
     hosts = json.load(file)
 
 # Function to ping a host
-def ping_host(url):
-    ping('127.0.0.1', verbose=True)
+def ping_host(address):
+    q = ping(address, count=1)
 
 
 results = []
 for host in hosts:
-    url = host.get('address')
+    address = host.get('address')
     avgTime = []
-    if url:
+    if address:
         for _ in range(5):  # Ping 5 times to get an average
             start = time.time()
-            ping_host(url)
+            ping_host(address)
             end = time.time()
             avgTime.append(end - start)
         avg_time = sum(avgTime) / len(avgTime)
-        results.append({'url': url, 'avgTime': avg_time})
+        results.append({'address': address, 'avgTime': avg_time})
 
-with open('ping_results.json', 'w') as outfile:
+with open('/Users/oliver/Desktop/Github/Triangulator/ping_results.json', 'w') as outfile:
     json.dump(results, outfile, indent=4)
     

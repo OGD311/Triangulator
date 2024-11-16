@@ -1,246 +1,246 @@
 [
     {
-        "address": "at-ed.metercdn.net",
+        "distance": 1376.090433687028,
         "avgTime": 0.03570899963378906
     },
     {
-        "address": "at-gr.metercdn.net",
+        "distance": 1388.4732250707134,
         "avgTime": 0.05060653686523438
     },
     {
-        "address": "au-ed.metercdn.net",
+        "distance": 16961.938804410576,
         "avgTime": 0.26991963386535645
     },
     {
-        "address": "be-ed.metercdn.net",
+        "distance": 485.8841798334765,
         "avgTime": 0.037873125076293944
     },
     {
-        "address": "bgco-ed.metercdn.net",
+        "distance": 8627.160682432102,
         "avgTime": 0.17559404373168946
     },
     {
-        "address": "ca-ed.metercdn.net",
+        "distance": 5061.754529116453,
         "avgTime": 0.10389475822448731
     },
     {
-        "address": "ch-ed2.metercdn.net",
+        "distance": 974.4158537913435,
         "avgTime": 0.04101204872131348
     },
     {
-        "address": "ch-ed3.metercdn.net",
+        "distance": 974.4158537913435,
         "avgTime": 0.029604625701904298
     },
     {
-        "address": "ch-ed4.metercdn.net",
+        "distance": 974.4158537913435,
         "avgTime": 0.02914581298828125
     },
     {
-        "address": "cl-ed.metercdn.net",
+        "distance": 11728.453260175069,
         "avgTime": 0.20622081756591798
     },
     {
-        "address": "cr-ed.metercdn.net",
+        "distance": 1505.839114553251,
         "avgTime": 0.061864042282104494
     },
     {
-        "address": "cz-ed.metercdn.net",
+        "distance": 1160.3479647067986,
         "avgTime": 0.0330049991607666
     },
     {
-        "address": "de-ed.metercdn.net",
+        "distance": 787.1560652182188,
         "avgTime": 0.019872140884399415
     },
     {
-        "address": "dk-ed.metercdn.net",
+        "distance": 942.2800601954116,
         "avgTime": 0.044711875915527347
     },
     {
-        "address": "es-ed.metercdn.net",
+        "distance": 1813.3546937784454,
         "avgTime": 0.03977656364440918
     },
     {
-        "address": "fr-ed.metercdn.net",
+        "distance": 570.3592714369346,
         "avgTime": 0.015598678588867187
     },
     {
-        "address": "gb-ed.metercdn.net",
+        "distance": 228.7034951976505,
         "avgTime": 0.009502363204956055
     },
     {
-        "address": "gbdock-ed.metercdn.net",
+        "distance": 232.0604936632457,
         "avgTime": 0.008772611618041992
     },
     {
-        "address": "gr-gr.metercdn.net",
+        "distance": 2312.4682971113853,
         "avgTime": 0.06886038780212403
     },
     {
-        "address": "hk-ed.metercdn.net",
+        "distance": 9581.238396140505,
         "avgTime": 0.6510365962982178
     },
     {
-        "address": "hu-ed.metercdn.net",
+        "distance": 1586.5702312162866,
         "avgTime": 0.04985389709472656
     },
     {
-        "address": "hu-ed3.metercdn.net",
+        "distance": 1586.5702312162866,
         "avgTime": 0.040551185607910156
     },
     {
-        "address": "il-ta.metercdn.net",
+        "distance": 3723.7085439300786,
         "avgTime": 0.07423367500305175
     },
     {
-        "address": "is-ed.metercdn.net",
+        "distance": 1662.9662289774265,
         "avgTime": 0.043306922912597655
     },
     {
-        "address": "it-ed.metercdn.net",
+        "distance": 1612.1474262672614,
         "avgTime": 0.04938993453979492
     },
     {
-        "address": "itpl-ed.metercdn.net",
+        "distance": 2041.7577853412513,
         "avgTime": 0.05174131393432617
     },
     {
-        "address": "jp-ed.metercdn.net",
+        "distance": 9440.130037321915,
         "avgTime": 0.28478174209594725
     },
     {
-        "address": "lt-ed.metercdn.net",
+        "distance": 1742.2061083937153,
         "avgTime": 0.04685897827148437
     },
     {
-        "address": "lv-ed.metercdn.net",
+        "distance": 1661.5435016035126,
         "avgTime": 0.05758981704711914
     },
     {
-        "address": "md-ed.metercdn.net",
+        "distance": 2250.75076765275,
         "avgTime": 0.06991915702819824
     },
     {
-        "address": "nl-ed.metercdn.net",
+        "distance": 441.1296581645346,
         "avgTime": 0.01501307487487793
     },
     {
-        "address": "nm-ed.metercdn.net",
+        "distance": 2113.91164818292,
         "avgTime": 0.05499300956726074
     },
     {
-        "address": "nw-ed.metercdn.net",
+        "distance": 1034.2483349928116,
         "avgTime": 0.04918403625488281
     },
     {
-        "address": "pl-ed2.metercdn.net",
+        "distance": 1510.3081499960483,
         "avgTime": 0.03954524993896484
     },
     {
-        "address": "pl-ed3.metercdn.net",
+        "distance": 1510.3081499960483,
         "avgTime": 0.05107836723327637
     },
     {
-        "address": "ro-ro.metercdn.net",
+        "distance": 2222.584469728116,
         "avgTime": 0.05034346580505371
     },
     {
-        "address": "rs-ed.metercdn.net",
+        "distance": 1846.767385260091,
         "avgTime": 0.06182184219360352
     },
     {
-        "address": "ru-ed2.metercdn.net",
+        "distance": 2499.832327838383,
         "avgTime": 0.059481048583984376
     },
     {
-        "address": "rusp-ed.metercdn.net",
+        "distance": 2032.615310325254,
         "avgTime": 0.06999802589416504
     },
     {
-        "address": "sg-ed.metercdn.net",
+        "distance": 10889.614522205855,
         "avgTime": 0.17671990394592285
     },
     {
-        "address": "si-ed.metercdn.net",
+        "distance": 1403.3632477131061,
         "avgTime": 0.03986344337463379
     },
     {
-        "address": "sw-ed.metercdn.net",
+        "distance": 1367.2176076022527,
         "avgTime": 0.03428926467895508
     },
     {
-        "address": "uae-ed.metercdn.net",
+        "distance": 5589.445459956799,
         "avgTime": 0.1623162269592285
     },
     {
-        "address": "us-ed.metercdn.net",
+        "distance": 5427.579017648184,
         "avgTime": 0.09396023750305176
     },
     {
-        "address": "usmi-ed.metercdn.net",
+        "distance": 7003.657592347604,
         "avgTime": 0.11085543632507325
     },
     {
-        "address": "ausd-bluevps.metercdn.net",
+        "distance": 16962.396368785998,
         "avgTime": 0.2511162281036377
     },
     {
-        "address": "cabe-bluevps.metercdn.net",
+        "distance": 5080.667044687575,
         "avgTime": 0.09768414497375488
     },
     {
-        "address": "cyli-bluevps.metercdn.net",
+        "distance": 3403.800104339563,
         "avgTime": 0.0983959674835205
     },
     {
-        "address": "defr-bluevps.metercdn.net",
+        "distance": 787.1560652182188,
         "avgTime": 0.02126765251159668
     },
     {
-        "address": "eeta-bluevps.metercdn.net",
+        "distance": 1734.186275830771,
         "avgTime": 0.06033778190612793
     },
     {
-        "address": "esmd-bluevps.metercdn.net",
+        "distance": 1451.2941257155712,
         "avgTime": 0.0332883358001709
     },
     {
-        "address": "frgr-bluevps.metercdn.net",
+        "distance": 362.15429755942137,
         "avgTime": 0.012386131286621093
     },
     {
-        "address": "ilta-bluevps.metercdn.net",
+        "distance": 3723.7085439300786,
         "avgTime": 0.09823532104492187
     },
     {
-        "address": "itpl-bluevps.metercdn.net",
+        "distance": 2041.7577853412513,
         "avgTime": 0.07275609970092774
     },
     {
-        "address": "nlam-bluevps.metercdn.net",
+        "distance": 441.1296581645346,
         "avgTime": 0.014795637130737305
     },
     {
-        "address": "plwa-bluevps.metercdn.net",
+        "distance": 1510.3081499960483,
         "avgTime": 0.036429548263549806
     },
     {
-        "address": "sest-bluevps.metercdn.net",
+        "distance": 1367.2176076022527,
         "avgTime": 0.04674596786499023
     },
     {
-        "address": "sgsg-bluevps.metercdn.net",
+        "distance": 16962.396368785998,
         "avgTime": 0.2881814479827881
     },
     {
-        "address": "ukln-bluevps.metercdn.net",
+        "distance": 228.7034951976505,
         "avgTime": 0.009251213073730469
     },
     {
-        "address": "usas-bluevps.metercdn.net",
+        "distance": 5766.69101110622,
         "avgTime": 0.09557962417602539
     },
     {
-        "address": "usla-bluevps.metercdn.net",
+        "distance": 5766.69101110622,
         "avgTime": 0.1410773754119873
     }
 ]

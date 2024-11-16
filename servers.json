@@ -178,6 +178,70 @@
     {
       "address": "usmi-ed.metercdn.net",
       "coordinates": [25.78, -80.19]
+    },
+    {
+      "coordinates": [-33.856506, 151.2365203],
+      "address": "ausd-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [45.397959, -73.820186],
+      "address": "cabe-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [34.6631114593, 33.0580438377],
+      "address": "cyli-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [50.10284985235591, 8.67013407455254],
+      "address": "defr-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [59.3996215598, 24.7681828621],
+      "address": "eeta-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [40.415, -3.68359],
+      "address": "esmd-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [50.9837781, 2.11852278],
+      "address": "frgr-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [32.0905383, 34.7590558],
+      "address": "ilta-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [38.128556, 13.379795],
+      "address": "itpl-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [52.395663, 4.8926897],
+      "address": "nlam-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [52.257133, 21.013682],
+      "address": "plwa-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [59.3223, 18.0838],
+      "address": "sest-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [-33.856506, 151.2365203],
+      "address": "sgsg-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [51.49785, -0.122471],
+      "address": "ukln-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [39.0313731196, -77.4753606098],
+      "address": "usas-bluevps.metercdn.net"
+    },
+    {
+      "coordinates": [39.0313731196, -77.4753606098],
+      "address": "usla-bluevps.metercdn.net"
     }
   ]
   
