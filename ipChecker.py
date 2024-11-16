@@ -10,7 +10,7 @@ def check_ips(input_file, output_file):
         response = requests.get(f'http://ip-api.com/json/{ip}')
         data = response.json()
         if data['status'] == 'success':
-            results.append({'ip': ip, 'city': data['city'], 'coordinates': (data['lat'], data['lon'])})
+            results.append({'ip': ip, 'city': data['city'], 'coordinates': (data['lat'], data['lon']), 'country': data['country']})
         else:
             results.append({'ip': ip, 'city': 'Unknown'})
     
