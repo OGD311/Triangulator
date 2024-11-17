@@ -136,7 +136,7 @@ def run():
 
     distance = h.haversine(coord1, coord2)
 
-    if distance < 20: 
+    if distance < 25: 
         print("You are in Sheffield")
 
     elif distance < 80: 
@@ -154,3 +154,4 @@ yes = True
 
 while yes:
     yes = run()
+    time.sleep(5)
