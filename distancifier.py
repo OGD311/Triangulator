@@ -7,9 +7,10 @@ import json
 import random
 import webbrowser
 from scipy.optimize import minimize
+import numpy as np
 
 model = joblib.load('/Users/oliver/Desktop/Github/Triangulator/disTime.joblib')
-print("running")
+# print("running")
 
 def ping_host(address):
     q = ping(address, count=1)
@@ -77,10 +78,11 @@ for i in range(len(pingResults)):
     
 
 
-for i in range(len(modelResults)):
-    print(f"{modelResults[i]['coordinates']} : {modelResults[i]['distance']}")
+# for i in range(len(modelResults)):
+#     print(f"{modelResults[i]['coordinates']} : {modelResults[i]['distance']}")
 
-    def calculate_center(modelResults):
+
+def calculate_center(modelResults):
         def objective_function(point, modelResults):
             total_error = 0
             for result in modelResults:
@@ -94,33 +96,33 @@ for i in range(len(modelResults)):
         result = minimize(objective_function, initial_guess, args=(modelResults,), method='L-BFGS-B')
         return result.x
 
-    best_point = calculate_center(modelResults)
-    # print(f"Best point: {best_point}")
+best_point = calculate_center(modelResults)
+# print(f"Best point: {best_point}")
 
 
 # # https://www.mapdevelopers.com/draw-circle-tool.php?circles=[[371098,50.3879546,-4.1318378,"#AAAAAA","#000000",0.4],[222928,54.9741773,-1.6150185,"#AAAAAA","#000000",0.4],[222305,51.5085078,-0.0843403,"#AAAAAA","#000000",0.4]]
 # # https://www.mapdevelopers.com/draw-circle-tool.php?circles=[[393.11247610677924,50.3881,-4.1324,"#AAAAAA","#000000",0.4],[311.8821298708854,56.4806,-2.9358,"#AAAAAA","#000000",0.4],[230.11380145610286,51.5074,-0.127758,"#AAAAAA","#000000",0.4]]
 
-import urllib.parse
+# import urllib.parse
 
-url = "https://www.mapdevelopers.com/draw-circle-tool.php?circles=["
-circles = []
+# url = "https://www.mapdevelopers.com/draw-circle-tool.php?circles=["
+# circles = []
 
-for result in modelResults:
-    lat, lon = result['coordinates']
-    distance = round(result['distance'] * 1000, 1)
-    circle = f"[{distance},{lat},{lon},\"#AAAAAA\",\"#000000\",0.4]"
-    circles.append(circle)
+# for result in modelResults:
+#     lat, lon = result['coordinates']
+#     distance = round(result['distance'] * 1000, 1)
+#     circle = f"[{distance},{lat},{lon},\"#AAAAAA\",\"#000000\",0.4]"
+#     circles.append(circle)
 
-circle = f"[{1000},{best_point[0]},{best_point[1]},\"#AAAAAA\",\"#000000\",0.4]"
-circles.append(circle)
+# circle = f"[{1000},{best_point[0]},{best_point[1]},\"#AAAAAA\",\"#000000\",0.4]"
+# circles.append(circle)
 
-url += ",".join(circles)
-url += "]"
+# url += ",".join(circles)
+# url += "]"
 
-encoded_url = urllib.parse.quote(url, safe=':/?=&')
-print(encoded_url)
-webbrowser.open(encoded_url)
+# encoded_url = urllib.parse.quote(url, safe=':/?=&')
+# print(encoded_url)
+# webbrowser.open(encoded_url)
 
 # Am in sheffield????
 
@@ -130,11 +132,11 @@ coord2 = (best_point[0], best_point[1])
 
 distance = h.haversine(coord1, coord2)
 
-if distance < 20:
+if distance < 20: 
     print("You are in Sheffield")
 
-elif distance < 50:
-    print("Maybe in Sheffield")
+elif distance < 80: 
+    print("Almost in Sheffield")
 
 else:
     print("Not in Sheffield")
