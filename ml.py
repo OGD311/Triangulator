@@ -6,7 +6,7 @@ import joblib
 import numpy as np
 import matplotlib.pyplot as plt
 
-TRAIN_SET_COUNT = 120
+TRAIN_SET_COUNT = 100
 
 # Load the data
 with open('/Users/oliver/Desktop/Github/Triangulator/final_data.json', 'r') as f:
@@ -20,7 +20,7 @@ distance_data = [-distance for distance in distance_data]
 
 TRAIN_INPUT = time_data
 TRAIN_OUTPUT = distance_data
-degree = 7  # Set the degree for the polynomial
+degree = 8  # Set the degree for the polynomial
 
 # Create and train the model
 model = make_pipeline(StandardScaler(), PolynomialFeatures(degree), LinearRegression())

@@ -6,6 +6,7 @@ import haversine as h
 import json
 import random
 import webbrowser
+from scipy.optimize import minimize
 
 model = joblib.load('/Users/oliver/Desktop/Github/Triangulator/disTime.joblib')
 print("running")
@@ -15,28 +16,28 @@ def ping_host(address):
 
 
 hosts = [
-    {
-            "ip": "2.222.126.0",
-            "city": "Dover",
-            "coordinates": [
-                51.1734,
-                1.2785
-            ],
-            "country": "United Kingdom",
-            "avgTime": 0.016706514358520507,
-            "distance": 308.91593866104284
-        },
         {
-            "ip": "90.221.131.0",
-            "city": "Brixton",
-            "coordinates": [
-                50.35,
-                -4.03333
-            ],
-            "country": "United Kingdom",
-            "avgTime": 0.022867441177368164,
-            "distance": 379.90614367936075
-        },
+        "ip": "51.89.128.110",
+        "city": "Newcastle upon Tyne",
+        "coordinates": [
+            54.9742,
+            -1.615
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.010955476760864257,
+        "distance": 177.3519567962753
+    },
+      {
+        "ip": "51.194.79.0",
+        "city": "Bridgend",
+        "coordinates": [
+            51.5396,
+            -3.5938
+        ],
+        "country": "United Kingdom",
+        "avgTime": 0.016228723526000976,
+        "distance": 249.91227638275703
+    },
         {
             "ip": "51.148.134.0",
             "city": "London",
@@ -79,9 +80,26 @@ for i in range(len(pingResults)):
 for i in range(len(modelResults)):
     print(f"{modelResults[i]['coordinates']} : {modelResults[i]['distance']}")
 
-    
-# https://www.mapdevelopers.com/draw-circle-tool.php?circles=[[371098,50.3879546,-4.1318378,"#AAAAAA","#000000",0.4],[222928,54.9741773,-1.6150185,"#AAAAAA","#000000",0.4],[222305,51.5085078,-0.0843403,"#AAAAAA","#000000",0.4]]
-# https://www.mapdevelopers.com/draw-circle-tool.php?circles=[[393.11247610677924,50.3881,-4.1324,"#AAAAAA","#000000",0.4],[311.8821298708854,56.4806,-2.9358,"#AAAAAA","#000000",0.4],[230.11380145610286,51.5074,-0.127758,"#AAAAAA","#000000",0.4]]
+    def calculate_center(modelResults):
+        def objective_function(point, modelResults):
+            total_error = 0
+            for result in modelResults:
+                lat, lon = result['coordinates']
+                predicted_distance = result['distance']
+                actual_distance = h.haversine(point, (lat, lon))
+                total_error += (predicted_distance - actual_distance) ** 2
+            return total_error
+
+        initial_guess = np.mean([result['coordinates'] for result in modelResults], axis=0)
+        result = minimize(objective_function, initial_guess, args=(modelResults,), method='L-BFGS-B')
+        return result.x
+
+    best_point = calculate_center(modelResults)
+    # print(f"Best point: {best_point}")
+
+
+# # https://www.mapdevelopers.com/draw-circle-tool.php?circles=[[371098,50.3879546,-4.1318378,"#AAAAAA","#000000",0.4],[222928,54.9741773,-1.6150185,"#AAAAAA","#000000",0.4],[222305,51.5085078,-0.0843403,"#AAAAAA","#000000",0.4]]
+# # https://www.mapdevelopers.com/draw-circle-tool.php?circles=[[393.11247610677924,50.3881,-4.1324,"#AAAAAA","#000000",0.4],[311.8821298708854,56.4806,-2.9358,"#AAAAAA","#000000",0.4],[230.11380145610286,51.5074,-0.127758,"#AAAAAA","#000000",0.4]]
 
 import urllib.parse
 
@@ -94,9 +112,29 @@ for result in modelResults:
     circle = f"[{distance},{lat},{lon},\"#AAAAAA\",\"#000000\",0.4]"
     circles.append(circle)
 
+circle = f"[{1000},{best_point[0]},{best_point[1]},\"#AAAAAA\",\"#000000\",0.4]"
+circles.append(circle)
+
 url += ",".join(circles)
 url += "]"
 
 encoded_url = urllib.parse.quote(url, safe=':/?=&')
 print(encoded_url)
 webbrowser.open(encoded_url)
+
+# Am in sheffield????
+
+coord1 = (53.38122788610671, -1.4788009949737875) # Sheffield
+
+coord2 = (best_point[0], best_point[1])
+
+distance = h.haversine(coord1, coord2)
+
+if distance < 20:
+    print("You are in Sheffield")
+
+elif distance < 50:
+    print("Maybe in Sheffield")
+
+else:
+    print("Not in Sheffield")
